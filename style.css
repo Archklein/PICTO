@@ -11,8 +11,8 @@
 }
 
 :root {
-  --main-60: #e2ece5;
-  --main-30: #94d2bd;
+  --main-60: #f4f8f3;
+  --main-30: #ffffff;
   --main-10-text: #001219;
 }
 
@@ -28,15 +28,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: all 0.3s ease-in-out;
-  background-color: var(--main-60);
+  background-color: #f4f8f3;
 }
 
 .nav_top_wrapper {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: #dae9dc;
+  background: #fff;
   backdrop-filter: blur(10px);
   z-index: 100;
   position: fixed;
@@ -134,18 +135,21 @@ body {
   bottom: 0;
   width: 100%;
   border-top: 1px solid #7ea7794f;
-  background: #dae9dc;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
+  padding-top: 10px;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.06);
+  z-index: 100;
   .nav_bottom {
     width: 100%;
     max-width: 600px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 0.5rem;
 
     .nb_icon {
       transition: all 0.2s ease-in-out;
@@ -175,9 +179,11 @@ body {
     }
 
     .plus {
+      z-index: 101;
+      box-shadow: 0 4px 12px rgba(22, 163, 74, 0.35);
       width: 6rem;
       height: 6rem;
-      border: 5px solid var(--main-30);
+      border: 2px solid var(--main-60);
       transform: translateY(-60%);
       background: linear-gradient(29deg, #0a9396 0%, #05e108 90%);
       display: flex;
@@ -195,11 +201,11 @@ body {
 
     .plus:hover {
       background: linear-gradient(29deg, #0aa1a3 0%, #07cc0a 90%);
-      border: 4.5px solid var(--main-30);
+      border: 2px solid #b9f3ba;
     }
 
     .plus:active {
-      border: 4.5px solid var(--main-30);
+      border: 2px solid #b9f3ba;
       background: linear-gradient(29deg, #0a9396 0%, #05e108 90%);
     }
 
