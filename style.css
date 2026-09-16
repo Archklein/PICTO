@@ -149,6 +149,7 @@ body {
 
     .nb_icon {
       transition: all 0.2s ease-in-out;
+      flex-direction: column;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -160,8 +161,9 @@ body {
       }
     }
 
-    .nb_icon {
-      svg:hover {
+    .nb_icon:hover {
+      svg,
+      span {
         color: #0a9496e3;
       }
     }
@@ -202,7 +204,8 @@ body {
     }
 
     .home {
-      svg {
+      svg,
+      span {
         color: #0a9396;
       }
     }
