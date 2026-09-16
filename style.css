@@ -31,14 +31,17 @@ body {
   background-color: var(--main-60);
 }
 
-nav {
+.nav_top_wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(136deg, #8ae5f7 0%, #94d2bd 100%);
+  background: #dae9dc;
   backdrop-filter: blur(10px);
   z-index: 100;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #7ea7794f;
 
   .navtop {
     padding-top: calc(env(safe-area-inset-top, 20px) + 8px);
@@ -49,7 +52,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #c5ffbd4f;
 
     .logo_wrapper {
       height: 100%;
@@ -107,12 +109,13 @@ nav {
         padding: 0.5rem;
 
         div {
-          padding: 0.5rem 0 0.5rem 0.5rem;
+          padding: 0.5rem;
           display: flex;
           align-items: center;
           justify-content: center;
           border-radius: 50%;
           transition: all 0.2s ease-in-out;
+          border: none;
           svg {
             color: var(--main-10-text);
           }
@@ -120,6 +123,81 @@ nav {
         div:hover {
           background-color: #71a7954f;
         }
+      }
+    }
+  }
+}
+
+.nav_bottom_wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #7ea7794f;
+  background: #dae9dc;
+
+  .nav_bottom {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+
+    .nb_icon {
+      transition: all 0.2s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.2rem;
+      width: 5rem;
+      height: 5rem;
+      svg {
+        color: var(--main-10-text);
+      }
+    }
+
+    .nb_icon {
+      svg:hover {
+        color: #0a9496e3;
+      }
+    }
+
+    .nb_icon:active {
+      svg {
+        color: #10aeb1e3;
+      }
+    }
+
+    .plus {
+      width: 6rem;
+      height: 6rem;
+      border: 2px solid var(--main-60);
+      transform: translateY(-60%);
+      background-color: #0a9396;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      transition: all 0.2s ease-in-out;
+
+      svg {
+        padding-top: 0.5rem;
+        color: var(--main-60);
+      }
+    }
+
+    .plus:hover {
+      background-color: #0a9496e3;
+    }
+
+    .plus:active {
+      background-color: #10aeb1e3;
+    }
+
+    .home {
+      svg {
+        color: #0a9396;
       }
     }
   }
