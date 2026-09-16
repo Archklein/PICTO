@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+:root {
+  --bg-main: #f3f6f4;
+  --surface-white: #ffffff;
+
+  --green-primary: #2d8a4e;
+  --green-hover: #236e3e;
+  --green-active: #1b5630;
+
+  --lime-bg: #e2ece5; /* Lime/sage tint background for pills, inputs & tags */
+  --lime-hover: #d3e2d7;
+  --lime-active: #c4d8c9;
+
+  --text-main: #1c2a23;
+  --text-muted: #6b7a72;
+  --text-on-green: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--bg-main);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--surface-white);
+  z-index: 100;
+
+  .navtop {
+    padding-top: calc(env(safe-area-inset-top, 20px) + 8px);
+    padding-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo_wrapper {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .logo {
+        height: 50px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      h3 {
+        font-size: clamp(1rem, 8vw, 3rem);
+      }
+    }
+  }
+}
