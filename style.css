@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  --text-dark: #1d1d1f;
+  --text-light: #ffffff;
+  --outline: #e2e8f0;
+  --main-bg: #f4f5f7;
+  --card-bg: #ffffff;
+  --shadow-md:
+    0 6px 16px -2px rgba(0, 0, 0, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  font-size: 1.6rem; /* 16px */
+  background-color: #f4f5f7;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+.navtop {
+  box-shadow: var(--shadow-md);
+  user-select: none;
+  position: relative;
+  z-index: 10;
+  padding-left: clamp(1.5rem, 8vw, 1.6rem);
+  padding-right: clamp(1.5rem, 8vw, 1.6rem);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  background-color: #ffffff;
+  border-bottom: 0.1rem solid #e2e8f0;
+
+  .logo_div {
+    margin-right: auto;
+    height: 3.2rem;
+    width: auto;
+    .logo {
+      width: 3.2rem;
+      height: 3.2rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .hamburger_menu label {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  #menu_toggle {
+    display: none;
+  }
+
+  .menu_list {
+    padding: 1.6rem;
+    opacity: 0;
+    visibility: hidden;
+    user-select: none;
+    top: 100%;
+    height: auto;
+    z-index: 1;
+    transform: translateY(-10px);
+    left: 0;
+    background-color: var(--card-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+      visibility 0.3s;
+
+    a {
+      font-weight: 400;
+      color: var(--text-dark);
+      padding: 1rem;
+      text-decoration: none;
+      transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    a:hover {
+      color: aqua;
+    }
+  }
+
+  #menu_toggle:checked ~ .menu_list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
