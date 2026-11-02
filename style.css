@@ -209,3 +209,127 @@ html {
     }
   }
 }
+
+.main_container {
+  padding: 1.6rem;
+
+  .search_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--card-bg);
+    border: 0.1rem solid var(--outline);
+    border-radius: 1.2rem;
+    padding: 1rem 1.4rem;
+    margin-bottom: 1.6rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+
+    .search_input {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 1.4rem;
+      font-family: inherit;
+      background: transparent;
+      color: var(--text-dark);
+    }
+  }
+
+  .category_scroll {
+    display: flex;
+    gap: 0.8rem;
+    overflow-x: auto;
+    padding-bottom: 1.6rem;
+    scrollbar-width: none;
+
+    .chip {
+      white-space: nowrap;
+      padding: 0.8rem 1.6rem;
+      border-radius: 2rem;
+      border: 0.1rem solid var(--outline);
+      background-color: var(--card-bg);
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--text-dark);
+      cursor: pointer;
+      transition: all 0.2s var(--ease-apple);
+
+      .chip.active {
+        background-color: var(--text-dark);
+        color: var(--text-light);
+        border-color: var(--text-dark);
+      }
+    }
+  }
+
+  .category_scroll::-webkit-scrollbar {
+    display: none; /* Hide scrollbar Chrome/Safari */
+  }
+
+  .product_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+    gap: 1.6rem;
+
+    .product_card {
+      background-color: var(--card-bg);
+      border: 0.1rem solid var(--outline);
+      border-radius: 1.2rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+
+      .card_image_wrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        background-color: #edf2f7;
+      }
+
+      .card_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .meetup_badge {
+        position: absolute;
+        bottom: 0.8rem;
+        left: 0.8rem;
+        background-color: rgba(0, 0, 0, 0.237);
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 0.8rem 0.8rem;
+        border-radius: 0.6rem;
+        backdrop-filter: blur(4px);
+      }
+
+      .card_details {
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+
+      .price {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #197158;
+      }
+
+      .product_title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--text-dark);
+        line-height: 1.3;
+      }
+
+      .seller_tag {
+        font-size: 1.1rem;
+        color: #718096;
+      }
+    }
+  }
+}
