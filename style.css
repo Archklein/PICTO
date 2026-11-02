@@ -35,6 +35,8 @@ a:active {
 body {
   font-size: 1.6rem; /* 16px */
   background-color: #f4f5f7;
+  padding-bottom: 7rem;
+  height: 100vh;
 }
 
 html {
@@ -51,7 +53,8 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 100;
   width: 100%;
   padding: 1.2rem 1.6rem;
@@ -125,7 +128,7 @@ html {
   top: 100%;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: calc(100dvh - 100%);
   background-color: rgba(0, 0, 0, 0.057);
   z-index: 98;
 
@@ -141,4 +144,68 @@ html {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+.nav_bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--card-bg);
+  position: fixed;
+  bottom: 0;
+  padding-top: 0.8rem;
+  padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 0px));
+
+  .nav_bot_div {
+    padding: 0.6rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 700px;
+
+    .nav_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: var(--text-dark);
+      padding: 0.6rem;
+      transition: color 0.2s var(--ease-apple);
+    }
+
+    .nav_item:hover {
+      color: #197158;
+    }
+    .nav_item:active {
+      color: #1f8b6d;
+    }
+
+    .add {
+      background-color: var(--color-accent);
+      color: #ffffff;
+      padding: 0.8rem 1.4rem;
+      border-radius: 2rem;
+      font-weight: 700;
+      transition: 0.35s var(--ease-apple);
+    }
+
+    .add:hover {
+      background-color: #1c7b60;
+      transform: translateY(-1px);
+      color: var(--text-light);
+    }
+    .add:active {
+      background-color: #1f8b6d;
+      transform: translateY(-1px);
+    }
+
+    .active {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+  }
 }
