@@ -16,18 +16,14 @@
 
   <body>
     <nav class="navtop">
-      <div class="logo_div">
-        <div class="logo">
-          <img src="images/PCT_Logo_Transparent.png" alt="PCT Logo" />
-        </div>
+      <div class="logo">
+        <img src="images/PCT_Logo_Transparent.png" alt="" />
       </div>
-
-      <input type="checkbox" name="" id="menu_toggle" />
       <label for="menu_toggle">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="26"
-          height="26"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -41,181 +37,42 @@
           <path d="M3 19h18" />
         </svg>
       </label>
-
-      <label class="overlay" for="menu_toggle"></label>
-
+      <input type="checkbox" name="" id="menu_toggle" />
+      <label class="nav_top_overlay" for="menu_toggle"></label>
       <div class="menu_list">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Settings</a>
-        <a href="#">Theme</a>
-        <a href="#">PCT Website</a>
+        <div class="menu_content">
+          <div class="menu_exit_section">
+            <h3>PICTO</h3>
+
+            <label for="menu_toggle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-x preview-icon"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </label>
+          </div>
+
+          <div class="menu_links">
+            <a href="#">Home</a>
+            <a href="#">Sell an Item</a>
+            <a href="#">My Listings</a>
+            <a href="#">Meetup Zones</a>
+            <a href="#">Rules & Safety</a>
+            <a href="#">Profile / Account</a>
+          </div>
+        </div>
       </div>
     </nav>
-    <nav class="nav_bottom">
-      <div class="nav_bot_div">
-        <a href="#" class="nav_item active">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-house preview-icon"
-          >
-            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
-            <path
-              d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
-            />
-          </svg>
-          <span>Home</span>
-        </a>
-        <a href="#" class="nav_item">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <rect x="3" y="3" width="7" height="7" rx="1"></rect>
-            <rect x="14" y="3" width="7" height="7" rx="1"></rect>
-            <rect x="14" y="14" width="7" height="7" rx="1"></rect>
-            <rect x="3" y="14" width="7" height="7" rx="1"></rect>
-          </svg>
-          <span>Category</span>
-        </a>
-        <a href="#" class="nav_item add">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-plus preview-icon"
-          >
-            <path d="M5 12h14" />
-            <path d="M12 5v14" />
-          </svg>
-        </a>
-        <a href="#" class="nav_item">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
-              d="m11 17 2 2a1 1 0 0 0 1.4 0l4.3-4.3a1 1 0 0 0 0-1.4l-1.3-1.3"
-            ></path>
-            <path d="m14 14 2.5 2.5"></path>
-            <path d="M22 11l-5.3-5.3a1 1 0 0 0-1.4 0L11 10"></path>
-            <path d="M2 11l5.3-5.3a1 1 0 0 1 1.4 0L13 10"></path>
-            <path
-              d="M2 11l2 2a1 1 0 0 0 1.4 0l4.3-4.3a1 1 0 0 0 0-1.4L8.4 6"
-            ></path>
-          </svg>
-          <span>Deals</span>
-        </a>
-        <a href="#" class="nav_item">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-user preview-icon"
-          >
-            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-            <circle cx="12" cy="7" r="4" />
-          </svg>
-          <span>Account</span>
-        </a>
-      </div>
-    </nav>
-
-    <main class="main_container">
-      <div class="search_wrapper">
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#718096"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-        <input
-          type="text"
-          placeholder="Search uniforms, calculators, modules..."
-          class="search_input"
-        />
-      </div>
-
-      <div class="category_scroll">
-        <button class="chip active">All Items</button>
-        <button class="chip">Uniforms</button>
-        <button class="chip">Books & Modules</button>
-        <button class="chip">Tech & Supplies</button>
-        <button class="chip">Org Shirts</button>
-      </div>
-
-      <div class="product_grid">
-        <article class="product_card">
-          <div class="card_image_wrapper">
-            <img
-              src="https://via.placeholder.com/300x200"
-              alt="BSIT Uniform Set"
-              class="card_img"
-            />
-            <span class="meetup_badge">Main Canteen</span>
-          </div>
-          <div class="card_details">
-            <span class="price">₱350</span>
-            <h3 class="product_title">BSIT Female Uniform (Medium)</h3>
-            <span class="seller_tag">Listed by IT Student</span>
-          </div>
-        </article>
-
-        <article class="product_card">
-          <div class="card_image_wrapper">
-            <img
-              src="https://via.placeholder.com/300x200"
-              alt="Scientific Calculator"
-              class="card_img"
-            />
-            <span class="meetup_badge">Gym Gate</span>
-          </div>
-          <div class="card_details">
-            <span class="price">₱850</span>
-            <h3 class="product_title">Casio FX-991EX ClassWiz</h3>
-            <span class="seller_tag">Listed by SHS Student</span>
-          </div>
-        </article>
-      </div>
-    </main>
   </body>
 </html>
