@@ -90,8 +90,6 @@ html {
   #menu_toggle:checked ~ .menu_list {
     transform: translateX(0%);
     pointer-events: auto;
-    visibility: visible;
-    opacity: 1;
   }
 
   .menu_list {
@@ -105,8 +103,6 @@ html {
     transition: 0.35s var(--ease-apple);
     transform: translateX(-100%);
     pointer-events: none;
-    visibility: hidden;
-    opacity: 0;
     padding: var(--spacing-medium);
 
     .menu_inner {
