@@ -184,6 +184,62 @@ html {
       }
     }
   }
+
+  .wide_nav_link {
+    display: none;
+    width: auto;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      .wide_home_link {
+        color: var(--color-accent);
+      }
+
+      li {
+        width: max-content;
+        position: relative;
+        cursor: pointer;
+        margin-right: var(--spacing-small);
+        transition: 0.35s var(--ease-apple);
+        a {
+          text-decoration: none;
+          color: var(--text-dark);
+          font-size: var(--text-base);
+        }
+      }
+
+      li:hover a {
+        color: var(--color-accent);
+      }
+
+      li::before {
+        content: "";
+        z-index: 1000;
+        position: absolute;
+        width: 0%;
+        height: 0.5px;
+        left: 0;
+        bottom: 0;
+        background-color: var(--color-accent-hover);
+        transition: all.35s var(--ease-apple);
+      }
+      li:hover::before {
+        width: 100%;
+      }
+    }
+  }
+
+  @media all and (min-width: 768px) {
+    .wide_nav_link {
+      display: block;
+    }
+
+    .hamburger_icon {
+      display: none;
+    }
+  }
 }
 
 .feed {
@@ -274,7 +330,6 @@ html {
         display: block;
         padding: var(--spacing-tiny);
         border-radius: 1.2rem;
-        height: 250px;
       }
     }
   }
