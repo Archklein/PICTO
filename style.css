@@ -132,6 +132,7 @@ html {
         align-items: center;
         justify-content: start;
         padding: var(--spacing-small);
+        border-bottom: 1px solid var(--outline);
 
         a {
           width: 100%;
@@ -140,6 +141,7 @@ html {
           text-decoration: none;
           color: var(--text-dark);
           font-size: var(--text-xl);
+          line-height: 1.5;
           transition: 0.35s var(--ease-apple);
           background-color: transparent;
 
