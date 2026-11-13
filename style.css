@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Xmind:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -26,6 +27,11 @@ a:active {
   --text-light: #ffffff;
   --color-accent: #10b981;
   --color-accent-hover: #059669;
+
+  --green-hover-lo: #10b9810a;
+  --green-active-lo: #10b98114;
+  --green-focus-lo: #10b9811d;
+
   --outline: #e2e8f0;
   --main-bg: #f8faf9;
   --card-bg: #ffffff;
@@ -176,14 +182,17 @@ html {
       }
 
       a:hover {
-        background-color: #d2d7d417;
+        background-color: #10b9810a;
         transform: scale(101%);
+        font-weight: 500;
       }
       a:active {
-        background-color: #ced1cf2b;
+        background-color: #10b98114;
       }
+
       a:focus {
-        background-color: #d2d7d426;
+        background-color: #10b9811d;
+        font-weight: 500;
       }
     }
   }
@@ -203,6 +212,7 @@ html {
     transform: scale(102%);
   }
   .lucide-text-align-end:active {
-    transform: scale(109%);
+    transform: scale(105%);
+    transform: translateX(-2px);
   }
 }
