@@ -165,7 +165,7 @@ html {
         padding: var(--spacing-small) var(--spacing-medium);
         font-size: var(--p2);
         letter-spacing: var(--tracking-p2);
-        font-weight: 400;
+        font-weight: 570;
         text-decoration: none;
         color: var(--text-dark);
         background-color: transparent;
@@ -184,7 +184,7 @@ html {
       a:hover {
         background-color: #10b9810a;
         transform: scale(101%);
-        font-weight: 500;
+        font-weight: 600;
       }
       a:active {
         background-color: #10b98114;
