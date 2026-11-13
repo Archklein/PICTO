@@ -165,7 +165,7 @@ html {
         padding: var(--spacing-small) var(--spacing-medium);
         font-size: var(--p2);
         letter-spacing: var(--tracking-p2);
-        font-weight: 570;
+        font-weight: 500;
         text-decoration: none;
         color: var(--text-dark);
         background-color: transparent;
