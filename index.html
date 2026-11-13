@@ -17,26 +17,10 @@
   <body>
     <nav class="navtop">
       <div class="logo">
-        <a href="#">
-          <img
-            src="https://pctdavao.edu.ph/wp-content/uploads/2024/06/logo2.png"
-            alt=""
-          />
-        </a>
+        <img src="https://calinan.pctdavao.edu.ph/img/logo2.png" alt="" />
       </div>
 
-      <div class="wide_nav_link">
-        <ul>
-          <li><a class="wide_home_link" href="#">Home</a></li>
-          <li><a href="#">Sell</a></li>
-          <li><a href="#">Listings</a></li>
-          <li><a href="#">Meetups</a></li>
-          <li><a href="#">Rules & Safety</a></li>
-          <li><a href="#">Account</a></li>
-        </ul>
-      </div>
-
-      <label class="hamburger_icon" for="menu_toggle">
+      <label for="menu_toggle">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -47,296 +31,162 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-text-align-justify preview-icon"
+          class="lucide lucide-text-align-end preview-icon"
         >
-          <path d="M3 5h18" />
-          <path d="M3 12h18" />
-          <path d="M3 19h18" />
+          <path d="M21 5H3" />
+          <path d="M21 12H9" />
+          <path d="M21 19H7" />
         </svg>
       </label>
       <input type="checkbox" name="" id="menu_toggle" />
 
       <div class="menu_list">
-        <div class="menu_inner">
-          <div class="menu_exit">
-            <div class="logo">
-              <img
-                src="https://pctdavao.edu.ph/wp-content/uploads/2024/06/logo2.png"
-                alt=""
-              />
-            </div>
-            <label for="menu_toggle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-x preview-icon"
-              >
-                <path d="M18 6 6 18" />
-                <path d="m6 6 12 12" />
-              </svg>
-            </label>
+        <div class="menu_exit">
+          <div class="logo">
+            <img src="https://calinan.pctdavao.edu.ph/img/logo2.png" alt="" />
           </div>
+          <label id="exit_label" for="menu_toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x preview-icon"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </label>
+        </div>
 
-          <div class="menu_links">
-            <a id="home_link" href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-house preview-icon"
-              >
-                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
-                <path
-                  d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
-                />
-              </svg>
-              Home</a
+        <div class="menu_links">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-house preview-icon"
             >
-            <a href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-store preview-icon"
-              >
-                <path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5" />
-                <path
-                  d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"
-                />
-                <path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05" />
-              </svg>
-              Sell an Item</a
+              <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+              <path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              />
+            </svg>
+            Home</a
+          >
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-tag preview-icon"
             >
-            <a href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-text-search preview-icon"
-              >
-                <path d="M21 5H3" />
-                <path d="M10 12H3" />
-                <path d="M10 19H3" />
-                <circle cx="17" cy="15" r="3" />
-                <path d="m21 19-1.9-1.9" />
-              </svg>
-              My Listings</a
+              <path
+                d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"
+              />
+              <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+            </svg>
+            Sell an Item</a
+          >
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-package preview-icon"
             >
-            <a href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-map-pinned preview-icon"
-              >
-                <path
-                  d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 01-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0112 0"
-                />
-                <path
-                  d="M4.474 15h-.197a1 1 0 00-.969.753l-1.097 4.35a1.5 1.5 0 001.444 1.898L20.344 22a1.5 1.5 0 001.446-1.897l-1.098-4.35a1 1 0 00-.969-.753h-.197"
-                />
-                <circle cx="12" cy="8" r="2" />
-              </svg>
-              Meetup Zones</a
+              <path
+                d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"
+              />
+              <path d="M12 22V12" />
+              <polyline points="3.29 7 12 12 20.71 7" />
+              <path d="m7.5 4.27 9 5.15" />
+            </svg>
+            My Listings</a
+          >
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-map-pin preview-icon"
             >
-            <a href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-shield-exclamation-point preview-icon"
-              >
-                <path
-                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
-                />
-                <path d="M12 8v4" />
-                <path d="M12 16h.01" />
-              </svg>
-              Rules & Safety</a
+              <path
+                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+              />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Meetup Zones</a
+          >
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-shield-check preview-icon"
             >
-            <a href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-user preview-icon"
-              >
-                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-              Account</a
+              <path
+                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+              />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            Rules & Safety</a
+          >
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-user preview-icon"
             >
-          </div>
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            Account</a
+          >
         </div>
       </div>
     </nav>
-
-    <main class="feed">
-      <div class="feed_grid">
-        <div class="card">
-          <img
-            src="https://m.media-amazon.com/images/I/51XkyHjTZvL._AC_UY1000_.jpg"
-            alt=""
-          />
-
-          <div class="card_body">
-            <h4>SHS PCT-calinan Uniform</h4>
-            <p class="size">Medium</p>
-
-            <div class="priceAndCta">
-              <p class="price">₱250</p>
-              <a href="#" class="cta_btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-shopping-cart-plus preview-icon"
-                >
-                  <path d="M16 5h6" />
-                  <path d="M19 2v6" />
-                  <path
-                    d="m2.05 2.05 1.099-.028a1 1 0 011.008.815l2.69 14.347A1 1 0 007.83 18H18"
-                  />
-                  <path d="M4.564 5H12" />
-                  <path d="M6.25 14h12.712a2 2 0 001.991-1.57l.172-1.041" />
-                  <circle cx="18" cy="20" r="2" />
-                  <circle cx="8" cy="20" r="2" />
-                </svg>
-                I'm interested</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="https://www.nitori.com.ph/cdn/shop/files/776106601_700x700.jpg?v=1721976410"
-            alt=""
-          />
-
-          <div class="card_body">
-            <h4>Stock Face Towels</h4>
-            <p class="size">Small</p>
-
-            <div class="priceAndCta">
-              <p class="price">₱50</p>
-              <a href="#" class="cta_btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-shopping-cart-plus preview-icon"
-                >
-                  <path d="M16 5h6" />
-                  <path d="M19 2v6" />
-                  <path
-                    d="m2.05 2.05 1.099-.028a1 1 0 011.008.815l2.69 14.347A1 1 0 007.83 18H18"
-                  />
-                  <path d="M4.564 5H12" />
-                  <path d="M6.25 14h12.712a2 2 0 001.991-1.57l.172-1.041" />
-                  <circle cx="18" cy="20" r="2" />
-                  <circle cx="8" cy="20" r="2" />
-                </svg>
-                I'm interested</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="https://images-na.ssl-images-amazon.com/images/I/61IEG7bwFvL.jpg"
-            alt=""
-          />
-
-          <div class="card_body">
-            <h4>Affordable Water Tumbler!</h4>
-            <p class="size">Medium</p>
-
-            <div class="priceAndCta">
-              <p class="price">₱200</p>
-              <a href="#" class="cta_btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-shopping-cart-plus preview-icon"
-                >
-                  <path d="M16 5h6" />
-                  <path d="M19 2v6" />
-                  <path
-                    d="m2.05 2.05 1.099-.028a1 1 0 011.008.815l2.69 14.347A1 1 0 007.83 18H18"
-                  />
-                  <path d="M4.564 5H12" />
-                  <path d="M6.25 14h12.712a2 2 0 001.991-1.57l.172-1.041" />
-                  <circle cx="18" cy="20" r="2" />
-                  <circle cx="8" cy="20" r="2" />
-                </svg>
-                I'm interested</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
   </body>
 </html>
