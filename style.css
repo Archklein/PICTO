@@ -250,7 +250,7 @@ html {
         color: var(--color-accent-hover);
       }
       a:active {
-        transform: scale(102%);
+        transform: scale(108%);
       }
 
       a:is(:hover, :focus, :active) .lucide-house2 path:first-child,
