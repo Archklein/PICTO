@@ -527,14 +527,14 @@ main {
 
   .feed_sidebar {
     position: sticky;
-    align-self: stretch;
+    align-self: flex-start;
     display: none;
     top: var(--navtop-height, 0px);
     flex-direction: column;
     gap: var(--spacing-tiny);
     width: 24rem;
-    height: auto;
-    min-height: calc(100dvh - var(--navtop-height, 0px));
+    height: calc(100dvh - var(--navtop-height, 0px));
+    overflow-y: auto;
     padding: var(--spacing-small);
     background-color: var(--card-bg);
     border-right: 4px solid var(--outline);
