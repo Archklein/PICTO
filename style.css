@@ -78,7 +78,6 @@ html {
 }
 
 .navtop {
-  z-index: 100;
   width: 100%;
   display: flex;
   align-items: center;
@@ -88,8 +87,6 @@ html {
   top: 0;
   left: 0;
   background-color: var(--main-bg);
-  border-bottom: 2px solid var(--outline);
-  box-shadow: var(--shadow-md);
 
   .logo {
     height: 100%;
@@ -108,6 +105,7 @@ html {
   }
 
   .menu_list {
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
@@ -165,7 +163,7 @@ html {
         padding: var(--spacing-small) var(--spacing-medium);
         font-size: var(--p2);
         letter-spacing: var(--tracking-p2);
-        font-weight: 500;
+        font-weight: 600;
         text-decoration: none;
         color: var(--text-dark);
         background-color: transparent;
@@ -184,7 +182,7 @@ html {
       a:hover {
         background-color: #10b9810a;
         transform: scale(101%);
-        font-weight: 600;
+        font-weight: 700;
       }
       a:active {
         background-color: #10b98114;
@@ -192,7 +190,7 @@ html {
 
       a:focus {
         background-color: #10b9811d;
-        font-weight: 500;
+        font-weight: 700;
       }
     }
   }
@@ -214,5 +212,83 @@ html {
   .lucide-text-align-end:active {
     transform: scale(105%);
     transform: translateX(-2px);
+  }
+
+  .navtop_menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--main-bg);
+    border-bottom: 2px solid var(--outline);
+    padding: var(--spacing-small);
+    box-shadow: var(--shadow-md);
+
+    .nt_menu_links {
+      width: 100%;
+      max-width: 600px;
+
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      a {
+        color: var(--text-muted);
+        transition: all 0.35s var(--ease-apple);
+        text-align: center;
+        padding: 0.3rem;
+        transform: scale(100%);
+        display: grid;
+        place-items: center;
+      }
+
+      a:is(:hover, :focus, :active) {
+        color: var(--color-accent-hover);
+      }
+      a:active {
+        transform: scale(102%);
+      }
+
+      a:is(:hover, :focus, :active) .lucide-house2 path:first-child,
+      a:is(:hover, :focus, :active) .lucide-package path:first-child,
+      a:is(:hover, :focus, :active) .lucide-map-pin path:first-child,
+      a:is(:hover, :focus, :active) .lucide-shield-check path:first-child,
+      a:is(:hover, :focus, :active) .lucide-user path {
+        fill: var(--color-accent-hover);
+        stroke: currentColor;
+      }
+
+      a:is(:hover, :focus, :active) .lucide-house2 path:last-child,
+      a:is(:hover, :focus, :active) .lucide-map-pin circle {
+        fill: var(--main-bg);
+        stroke: var(--main-bg);
+      }
+
+      a:is(:hover, :focus, :active) .lucide-package path:not(:first-child),
+      a:is(:hover, :focus, :active) .lucide-package polyline,
+      a:is(:hover, :focus, :active) .lucide-shield-check path:last-child {
+        fill: none;
+        stroke: var(--main-bg);
+      }
+
+      a:is(:hover, :focus, :active) .lucide-user circle {
+        fill: currentColor;
+        stroke: currentColor;
+      }
+
+      a:is(:hover, :focus, :active) .lucide-shopping-cart-plus .cart-basket,
+      a:is(:hover, :focus, :active) .lucide-shopping-cart-plus circle {
+        fill: currentColor;
+        stroke: currentColor;
+      }
+
+      a:is(:hover, :focus, :active) .lucide-shopping-cart-plus .cart-detail {
+        stroke: currentColor;
+      }
+    }
   }
 }
