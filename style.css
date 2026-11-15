@@ -171,6 +171,7 @@ html {
         border-radius: var(--spacing-tiny);
         transform: scale(100%);
         transition: all 0.35s var(--ease-apple);
+        user-select: none;
 
         .lucide {
           width: 1em;
@@ -430,6 +431,7 @@ main {
         aspect-ratio: 4/3;
         object-fit: cover;
         border-radius: var(--spacing-tiny);
+        user-select: none;
       }
 
       .card_body {
@@ -516,6 +518,7 @@ main {
           color: white;
           box-shadow: 0.4px 5px 0px #059669;
           border: 2px solid #10b981;
+          user-select: none;
         }
 
         .card_cta:hover {
@@ -542,6 +545,7 @@ main {
           border: 2px solid var(--color-accent);
           background-color: #10b9815a;
           display: block;
+          user-select: none;
         }
       }
     }
